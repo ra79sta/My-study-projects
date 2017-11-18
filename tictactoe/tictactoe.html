@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <link href='//fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet'>
+      <link rel="stylesheet" type="text/css" href="tictactoe.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <h1>Tic Tac Toe Game!</h1>
+    <div id="modal">
+      <div id="choosebox">
+      <h2>Choose your side!!!</h2>
+      <div id="buttons">
+         <button class="btn btn-default" id="x">X</button>
+         <button class="btn btn-default" id="o">O</button>
+        </div>
+      </div>
+    </div>
+ <table>
+    <tr>
+        <td class="cells" id="0"></td>
+        <td class="cells" id="1"></td>
+        <td class="cells" id="2"></td>
+    </tr>
+    <tr>
+        <td class="cells" id="3"></td>
+        <td class="cells" id="4"></td>
+        <td class="cells" id="5"></td>
+    </tr>
+    <tr>
+        <td class="cells" id="6"></td>
+        <td class="cells" id="7"></td>
+        <td class="cells" id="8"></td>
+    </tr>
+</table>
+    <div class="end">
+      <div class="declare"></div>
+    <button class = "btn btn-default" id="replay" onclick="restart()">Replay</button>
+    </div>
+    <div class="container-fluid down">
+<footer class="text-center">Made by ra79sta<img  src="https://pbs.twimg.com/profile_images/1222009706/ja.jpg" width="30" height="20"></footer>
+   </div>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script src="tictactoe.js"></script>
+  </body>
+</html>

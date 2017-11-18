@@ -1,0 +1,51 @@
+body {
+  text-align:center;
+  color:white;
+  background-image:url("https://media.npr.org/assets/img/2016/08/08/gettyimages-175590398_wide-30355c6f6fe56c3907759582f4e7e8a81f7fc41c.jpg?s=1400");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#time {
+  font-size: 50px;
+  white-space: pre;
+  font-family: Anton;
+  /*color:rgb(197, 25, 14);*/
+}
+
+h1 {
+  margin-top:20px;
+  margin-bottom:20px;
+  font-size:4em;
+  padding:25px;
+  font-family: Anton;
+  color:rgb(197, 25, 14);
+}
+h3 {
+  font-size:40px;
+  font-family: Anton;
+  color:rgb(197, 25, 14);
+}
+#ses-time,#break-time {
+  font-size:35px;
+  color:black;
+}
+#brincrease,#brdecrease,#sesincrease,#sesdecrease {
+  width: 40px;
+  height:40px;
+  border-radius:50px;
+  cursor:pointer;
+  font-size:25px;
+}
+.down{
+  margin-top:80px;
+  padding:20px;
+  color:black;
+}
+.btn{
+  padding:10px;
+  margin-top:30px;
+  width:80px;
+  border-radius:5px;
+  cursor:pointer;
+}

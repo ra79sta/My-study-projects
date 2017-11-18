@@ -1,0 +1,32 @@
+body {
+  text-align:center;
+  background-image:url(http://wallpapercave.com/wp/nkDhIBp.jpg);
+  padding:40px;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+h1 {
+  color:black;
+  font-family:"Playfair Display SC";
+  font-size:70px;
+}
+.container {
+  padding:60px;
+  color:black;
+  font-family:"Anton";
+  font-size:30px;
+}
+#temp{
+  font-size:70px;
+  color:black;
+  cursor:pointer;
+}
+.down{
+  margin-top:20px;
+  padding:20px;
+  color:white;
+}
+@media only screen and (max-width: 800px) {
+  h1 {
+      font-size: 40px;
+  }
