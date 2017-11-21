@@ -55,14 +55,15 @@ function restart() {
 }
 
 function turnClick(spot) {
-  if(typeof table[spot.target.id] == "number" ){
+  if(typeof table[spot.target.id] == "number" ) {
     turn(spot.target.id, human)
     me.push(Number(spot.target.id));
     //console.log(me);
     isItTie();
     isGameOver();
-    if (!isGameOver() && !isItTie())
+    if (!isGameOver() && !isItTie()) {
     turn(moveComp(), computer)
+    }
     isItTie();
     isGameOver();
   }
