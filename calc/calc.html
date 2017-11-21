@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>JS Calculator</title>
-   <meta name="description" content="math.js | basic usage">
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.13.3/math.min.js"></script>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-   <link href='http://fonts.googleapis.com/css?family=Bungee Inline' rel='stylesheet'>
-   <link rel="stylesheet" type="text/css" href="calc.css">
+    <meta name="description" content="math.js | basic usage">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.13.3/math.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <link href='http://fonts.googleapis.com/css?family=Bungee Inline' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="calc.css">
 
-  </head>
+</head>
+
 <body>
-  <h1>JS Calculator</h1>
+    <h1>JS Calculator</h1>
 
     <div id="calculator">
-       <form>
-         <input type="text" id="display" disabled><br>
-      <input type="button" value="CA" id="key" onclick="toscreen('ca')">
-  <input type="button" value="C" id="key" onclick="clearlast()">
-<input type="button" value="x^y" id="key" onclick="toscreen('^')">
-<input type="button" value="&#8730;" id="key" onclick="sqrt()">
-      <br>
-      <input type="button" value="9" id="key" onclick="toscreen('9')">
-      <input type="button" value="8" id="key" onclick="toscreen('8')">
-      <input type="button" value="7" id="key" onclick="toscreen('7')">
-      <input type="button" value="+" id="key" onclick="toscreen('+')">
-      <br>
-      <input type="button" value="6" id="key" onclick="toscreen('6')">
-      <input type="button" value="5" id="key" onclick="toscreen('5')">
-      <input type="button" value="4" id="key" onclick="toscreen('4')">
-       <input type="button" value="-" id="key" onclick="toscreen('-')">
-      <br>
-      <input type="button" value="3" id="key" onclick="toscreen('3')">
-      <input type="button" value="2" id="key" onclick="toscreen('2')">
-      <input type="button" value="1" id="key" onclick="toscreen('1')">
-      <input type="button" value="*" id="key" onclick="toscreen('*')">
-      <br>
-      <input type="button" value="0" id="key" onclick="toscreen('0')">
-      <input type="button" value="." id="key" onclick="toscreen('.')">
-      <input type="button" value="=" id="key" onclick="result()">
-      <input type="button" value="/" id="key" onclick="toscreen('/')">
-</form>
-   </div>
-<div class="container-fluid down">
-<footer class="text-center">Made by ra79sta<img  src="https://pbs.twimg.com/profile_images/1222009706/ja.jpg" width="30" height="20"></footer>
-  </div>
+        <form>
+            <input type="text" id="display" disabled><br>
+            <input type="button" value="CA" id="key" onclick="toscreen('ca')">
+            <input type="button" value="C" id="key" onclick="clearlast()">
+            <input type="button" value="x^y" id="key" onclick="toscreen('^')">
+            <input type="button" value="&#8730;" id="key" onclick="sqrt()">
+            <br>
+            <input type="button" value="9" id="key" onclick="toscreen('9')">
+            <input type="button" value="8" id="key" onclick="toscreen('8')">
+            <input type="button" value="7" id="key" onclick="toscreen('7')">
+            <input type="button" value="+" id="key" onclick="toscreen('+')">
+            <br>
+            <input type="button" value="6" id="key" onclick="toscreen('6')">
+            <input type="button" value="5" id="key" onclick="toscreen('5')">
+            <input type="button" value="4" id="key" onclick="toscreen('4')">
+            <input type="button" value="-" id="key" onclick="toscreen('-')">
+            <br>
+            <input type="button" value="3" id="key" onclick="toscreen('3')">
+            <input type="button" value="2" id="key" onclick="toscreen('2')">
+            <input type="button" value="1" id="key" onclick="toscreen('1')">
+            <input type="button" value="*" id="key" onclick="toscreen('*')">
+            <br>
+            <input type="button" value="0" id="key" onclick="toscreen('0')">
+            <input type="button" value="." id="key" onclick="toscreen('.')">
+            <input type="button" value="=" id="key" onclick="result()">
+            <input type="button" value="/" id="key" onclick="toscreen('/')">
+        </form>
+    </div>
+    <div class="container-fluid down">
+        <footer class="text-center">Made by ra79sta<img src="https://pbs.twimg.com/profile_images/1222009706/ja.jpg" width="30" height="20"></footer>
+    </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="calc.js"></script>
 </body>
+
 </html>

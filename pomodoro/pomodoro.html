@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Pomodoro clock</title>
-     <link href='//fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
-     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-      <link rel="stylesheet" type="text/css" href="pomodoro.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-     <h1>Pomodoro clock</h1>
+    <link href='//fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" type="text/css" href="pomodoro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h1>Pomodoro clock</h1>
     <div class="clock container">
-       <div class="row">
-         <div class="col-md-6">
-        <h3>Break Time</h3>
-      <input type="button" value="+" id="brincrease" onclick="brincrease()">
-           <span id="break-time">5</span>
-    <input type="button" value="-" id="brdecrease" onclick="brdecrease()">
-         </div>
-         <div class="col-md-6">
-       <h3>Session Time</h3>
-      <input type="button" value="+" id="sesincrease" onclick="increase()">
-           <span id="ses-time">25</span>
-      <input type="button" value="-" id="sesdecrease" onclick="decrease()">
-           </div>
-      </div>
-      <!--<h3>Time</h3>-->
-      <span id="time">25</span><br>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Break Time</h3>
+                <input type="button" value="+" id="brincrease" onclick="brincrease()">
+                <span id="break-time">5</span>
+                <input type="button" value="-" id="brdecrease" onclick="brdecrease()">
+            </div>
+            <div class="col-md-6">
+                <h3>Session Time</h3>
+                <input type="button" value="+" id="sesincrease" onclick="increase()">
+                <span id="ses-time">25</span>
+                <input type="button" value="-" id="sesdecrease" onclick="decrease()">
+            </div>
+        </div>
+        <!--<h3>Time</h3>-->
+        <span id="time">25</span><br>
         <button class="btn btn-default" id="start" onclick="countdown()">Start</button>
-      <button class="btn btn-default" id="pause" onclick="pause()">Pause</button>
+        <button class="btn btn-default" id="pause" onclick="pause()">Pause</button>
         <button class="btn btn-default" id="reset" onclick="reset()">Reset</button>
     </div>
     <div class="container-fluid down">
-<footer class="text-center">Made by ra79sta<img  src="https://pbs.twimg.com/profile_images/1222009706/ja.jpg" width="30" height="20"></footer>
-   </div>
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-      <script src="pomodoro.js"></script>
-  </body>
+        <footer class="text-center">Made by ra79sta<img src="https://pbs.twimg.com/profile_images/1222009706/ja.jpg" width="30" height="20"></footer>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="pomodoro.js"></script>
+</body>
+
 </html>
