@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simon Game</title>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='//fonts.googleapis.com/css?family=Russo One' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="Simon.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Simon Game</h1>
+        <div class="bigOne" id="circleBig">
+            <div class="btn button green" id="0"></div>
+            <div class="btn button red" id="1"></div>
+            <div class="btn button yellow" id="2"></div>
+            <div class="btn button blue" id="3"></div>
+            <div class="smallOne" id="circleSmall">
+                <div class="name">
+                    <h2>SIMON</h2>
+                </div>
+                <div class="indicator">
+                    <span id="light"></span>
+                </div>
+                <div class="display inline" id="count">
+                    <div class="dis">--</div>
+                    <p>COUNT</p>
+                </div>
+                <div class="start inline">
+                    <div class="startBtn"></div>
+                    <p>START</p>
+                </div>
+                <div class="strict inline">
+                    <div class="strictBtn "></div>
+                    <p>STRICT</p>
+                </div>
+                <div id="switch">
+                    <span class="lett">OFF</span>
+                    <label class="btnSwitch">
+            <input type = "checkbox" id = "offOn">
+             <span class = "slider"></span>
+          </label>
+                    <span class="lett">ON</span>
+                </div>
+            </div>
+        </div>
+        <div id="modal">
+            <span id="win"></span>
+        </div>
+    </div>
+    <div class="container-fluid down">
+        <footer class="text-center">Made by ra79sta<img src="https://pbs.twimg.com/profile_images/1222009706/ja.jpg" width="30" height="20"></footer>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="Simon.js"></script>
+</body>
+
+</html>
