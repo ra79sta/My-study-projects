@@ -1,0 +1,56 @@
+body {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Wikipedia-logo-en-big.png/734px-Wikipedia-logo-en-big.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgb(63, 48, 87);
+    background-size: 30%;
+    color: white;
+    padding: 20px;
+}
+
+#presskey {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 4em;
+    padding: 25px;
+    font-family: 'Gravitas One';
+
+}
+
+button {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgb(210, 93, 32);
+    cursor: pointer;
+}
+
+.box1 {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(178, 234, 197);
+    color: black;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.down {
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+}
+
+p {
+    font-family: 'Bitter';
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 30px;
+    }
+}

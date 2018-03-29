@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wikipedia Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link href='//fonts.googleapis.com/css?family=Gravitas One' rel='stylesheet'>
+    <link href='//fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wiki.css">
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1>Wikipedia Viewer</h1>
+        <div class="box">
+            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><img class="img-responsive" src="http://icons.iconarchive.com/icons/iconshock/free-social/256/wikipedia-icon.png"></a>
+            <p>Random search</p>
+        </div>
+        <form id="presskey" type="submit">
+            <input class="form-control" type="text" id="termSearch" placeholder="Search Wiki">
+            <button type="button" id="search" class="btn btn-default">Search</button>
+        </form>
+        <ul id="display">
+        </ul>
+    </div>
+    <div class="container-fluid down">
+        <footer class="text-center">Made by ra79sta<img src="https://pbs.twimg.com/profile_images/1222009706/ja.jpg" width="30" height="20"></footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="wiki.js"></script>
+
+</body>
+
+</html>
