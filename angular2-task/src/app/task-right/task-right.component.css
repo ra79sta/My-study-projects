@@ -1,0 +1,61 @@
+.container {
+    width: 320px;
+    padding: 0 20px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: #f8f8f8;
+    box-shadow: 0 1px 11px 0 rgba(133, 133, 133, 0.43);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: Roboto;
+}
+
+button {
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    font-family: Roboto;
+    margin-top: 100px;
+}
+
+button:hover {
+    background-color: #cfd8dc;
+}
+
+img {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+
+}
+
+span {
+    display: flex;
+    font-size: 14px;
+    color: #4a4a4a;
+    float: right;
+    margin-top: -7px;
+}
+
+li {
+    display: flex;
+    height: 60px;
+    border-bottom: 1px solid #dcdcdc;
+    align-items: center;
+    font-size: 14px;
+}
+
+.box {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+}

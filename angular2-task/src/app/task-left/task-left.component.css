@@ -1,0 +1,147 @@
+.container2 {
+    padding: 0 20px;
+    width: 320px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: Roboto;
+    /*z-index: -10;*/
+}
+
+.firstBox {
+    display: flex;
+    height: 80px;
+    border-bottom: 1px solid #dcdcdc;
+    align-items: center;
+}
+
+div.firstBox img {
+    width: 150px;
+    height: 40px;
+}
+
+.secondBox {
+    display: flex;
+    height: 140px;
+    border-bottom: 1px solid #dcdcdc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+div.secondBox img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #00a86d;
+}
+
+.image,
+.text {
+    width: 50%;
+}
+
+.names {
+    font-size: 23px;
+    margin-bottom: 15px;
+    text-align: left;
+    line-height: 1.15;
+    font-weight: 300;
+    color: #4a4a4a;
+}
+
+.someText {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1.15;
+    color: #4a4a4a;
+}
+
+.thirdBox {
+    display: flex;
+    height: 100px;
+    border-bottom: 1px solid #dcdcdc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    line-height: 1.15;
+}
+
+.first,
+.second {
+    width: 50%;
+}
+
+.start,
+.finish {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+}
+
+.date1,
+.date2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #00a86d;
+}
+
+.fourthBox {
+    display: flex;
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.middle {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.days,
+.progres {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+}
+
+.num1,
+.percent {
+    font-size: 30px;
+    font-weight: 500;
+    color: #00a86d;
+}
+
+.line {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #4a4a4a;
+    margin-bottom: 20px
+}
+
+.line > div {
+    background-color: #00a86d;
+    width: 57%;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.fifthBox {
+    height: 100px;
+    border-bottom: 1px solid #dcdcdc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width:1024px) {
+    .container2 {
+        display: none;
+    }
+}
