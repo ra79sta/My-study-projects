@@ -30,6 +30,7 @@ div.firstBox img {
     padding-top: 20px;
     padding-bottom: 20px;
     align-items: center;
+    text-align: left;
 }
 
 div.secondBox img {
