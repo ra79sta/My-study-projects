@@ -51,14 +51,18 @@ div.secondBox img {
     line-height: 1.15;
     font-weight: 300;
     color: #4a4a4a;
+    margin-bottom: 25px;
 }
 
-.someText {
+.someText1,
+.someText2,
+.someText3 {
     font-size: 14px;
     font-weight: 500;
     text-align: justify;
     line-height: 1.15;
     color: #4a4a4a;
+    margin-top: -12px;
 }
 
 .thirdBox {
