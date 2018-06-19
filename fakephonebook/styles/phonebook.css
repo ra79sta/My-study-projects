@@ -1,0 +1,179 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    position: relative;
+    width: 960px;
+    margin: auto;
+}
+
+.title {
+    padding: 10px;
+    border-bottom: 2px solid;
+    background: rgb(250, 250, 250);
+}
+
+.title h1 {
+    margin: 0px;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+}
+
+.col-md-3 {
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.searchName input[type=text] {
+    float: right;
+    padding: 8px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.searchName button {
+    float: right;
+    padding: 8px;
+    margin-top: 8px;
+    margin-right: 20px;
+    background: whitesmoke;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.quickAdd {
+    padding: 10px;
+    border-bottom: 1px solid;
+}
+
+#QuickAdd {
+    padding: 8px;
+    background: rgb(21, 12, 146);
+    border: 1px solid;
+    text-shadow: 0px 0px 1px;
+    color: white;
+    border-radius: 5px
+}
+
+.quickAddForm {
+    height: 300px;
+    padding: 10px;
+    background: rgb(240, 240, 240);
+    overflow: hidden;
+    display: none;
+}
+
+.quickAddForm label {
+    position: relative;
+    display: block;
+    width: 450px;
+    height: 10px;
+    float: left;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.quickAddForm input {
+    border: 1px solid;
+    width: 50%;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+
+#Add {
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    left: 300px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    background: rgb(21, 12, 146);
+    color: white;
+    width: 100px;
+}
+
+#Cancel {
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    left: 450px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    background: rgb(233, 7, 18);
+    width: 100px;
+    bottom: 86px;
+}
+
+.entry {
+    background: rgb(230, 230, 230);
+    width: 960px;
+    height: 40px;
+    border-bottom: 1px solid;
+
+}
+
+
+.entry .firstName {
+    width: 265px;
+    float: left;
+    padding: 11px;
+
+}
+
+.entry .lastName {
+    width: 280px;
+    float: left;
+    padding: 11px;
+
+}
+
+
+.entry .phoneNumber {
+    width: 300px;
+    float: left;
+    padding: 11px;
+
+}
+
+.entry .del {
+    width: 30px;
+    float: left;
+    padding: 5px;
+
+
+}
+
+.entry p {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 12px;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+}
+
+.entry .del a {
+    font-family: sans-serif;
+    color: #FFF;
+    font-size: 15px;
+    padding: 5px;
+    background: rgb(255, 100, 100);
+    border-radius: 8px;
+    text-decoration: none;
+}

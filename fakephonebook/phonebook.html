@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>PhoneBook</title>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" type="text/css" href="styles/phonebook.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Phone Book</h1>
+        </div>
+        <div class="searchName">
+            <form type="submit">
+                <button type="button" id="find">Search</button>
+                <input type="text" id="searchLastName" placeholder="Search Last Name">
+            </form>
+
+        </div>
+        <div class="quickAdd">
+            <button id="QuickAdd">+ Add</button>
+        </div>
+
+        <div class="row info">
+            <div class="col-md-3">First Name</div>
+            <div class="col-md-3">Last Name</div>
+            <div class="col-md-3">Telephone Number</div>
+        </div>
+
+        <div class="quickAddForm">
+            <form id="postForm">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstname" class="formField">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastname" class="formField">
+                <label for="phoneNumber">Telephone Number</label>
+                <input type="text" id="phone" class="formField">
+                <br>
+                <br>
+                <button type="submit" id="Add">Add New</button>
+            </form>
+            <button id="Cancel">Cancel</button>
+        </div>
+
+        <div class="phoneBook">
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="phonebook.js"></script>
+</body>
+
+</html>
