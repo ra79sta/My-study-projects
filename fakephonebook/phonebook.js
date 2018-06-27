@@ -11,7 +11,7 @@ $(document).ready(function () {
     function ajaxPost() {
         var formData = {
             firstname: $("#firstname").val(),
-            lastname: $("#lastname").val(),
+            lastname: $("#lastnameFronEnd").val(),
             phonenumber: $("#phone").val()
         }
         if ($("#firstname").val() != "" && $("#lastname").val() != "" && $("#phone").val() != "") {
@@ -130,7 +130,7 @@ $(document).ready(function () {
     }
 
 
-    $(".quickAdd").on("click", function () {
+    $("#QuickAdd").on("click", function () {
         $(".quickAddForm").show();
     });
     $("#Cancel").on("click", function () {
