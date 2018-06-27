@@ -11,7 +11,7 @@ $(document).ready(function () {
     function ajaxPost() {
         var formData = {
             firstname: $("#firstname").val(),
-            lastname: $("#lastnameFronEnd").val(),
+            lastname: $("#lastname").val(),
             phonenumber: $("#phone").val()
         }
         if ($("#firstname").val() != "" && $("#lastname").val() != "" && $("#phone").val() != "") {
