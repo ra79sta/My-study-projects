@@ -4,7 +4,7 @@ body {
 
 .container {
     position: relative;
-    width: 960px;
+    width: 990px;
     margin: auto;
 }
 
@@ -147,7 +147,7 @@ body {
 
 
 .entry .phoneNumber {
-    width: 300px;
+    width: 330px;
     float: left;
     padding: 11px;
 
@@ -156,7 +156,7 @@ body {
 .entry .del {
     width: 30px;
     float: left;
-    padding: 5px;
+    padding: 7px;
 
 
 }

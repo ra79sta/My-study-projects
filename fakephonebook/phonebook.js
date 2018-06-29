@@ -140,6 +140,6 @@ $(document).ready(function () {
     $("#Cancel").on("click", function () {
         $(".quickAddForm").hide();
         $("input[type=text]").val("");
-    });
+	});
 
 });
