@@ -26,7 +26,6 @@ $(document).ready(function () {
                 dataType: 'json',
                 success: function (result) {
                     ajaxGet();
-                    location.reload(true);
                     $(".quickAddForm").hide();
                     console.log("Successfuly Done");
                 },
@@ -36,6 +35,7 @@ $(document).ready(function () {
                 }
             });
             resetData();
+            del();
         } else {
             alert("Enter data!!!")
         }
@@ -48,7 +48,6 @@ $(document).ready(function () {
 
         var api = "http://localhost:3000/people?lastname=" + $("#searchLastName").val();
         if ($("#searchLastName").val() === "") {
-            location.reload(true);
             ajaxGet();
         } else {
             $.ajax({
@@ -65,10 +64,9 @@ $(document).ready(function () {
                             '<div class="phoneNumber"><p>' + result[i].phonenumber + '</p></div>' +
                             '<div class="del"><a href="#" class="delbutton" data-id=' + result[i].id + '>Delete</a></div>' +
                             '</div>')
-                        $("#searchLastName").val("");
-
                     };
                     $("#searchLastName").val("");
+                    del();
                 },
                 error: function (e) {
                     $(".phoneBook").html("<strong>Error</strong>");
@@ -98,6 +96,7 @@ $(document).ready(function () {
                         '<div class="del"><a href="#" class="delbutton" data-id=' + result[i].id + '>Delete</a></div>' +
                         '</div>')
                 }
+                del();
             },
             error: function (e) {
                 $(".phoneBook").html("<strong>Error</strong>");
@@ -108,22 +107,25 @@ $(document).ready(function () {
     }
 
     //DELETE REQUEST
+    function del() {
+        $(".entry").delegate(".delbutton", "click", function () {
 
-    $(".entry").delegate(".delbutton", "click", function () {
-
-        var TheID = $(this).attr("data-id");
-        console.log(TheID);
-        var rem = $(this).closest(".entry");
-        $.ajax({
-            type: "DELETE",
-            url: "http://localhost:3000/people/" + TheID,
-            success: function () {
-                rem.remove();
-                console.log('done!');
-            }
+            var TheID = $(this).attr("data-id");
+            console.log(TheID);
+            var rem = $(this).closest(".entry");
+            $.ajax({
+                type: "DELETE",
+                url: "http://localhost:3000/people/" + TheID,
+                success: function () {
+                    rem.remove();
+                    //location.reload(true);
+                    console.log('done!');
+                }
+            });
         });
-    });
 
+    }
+    del();
 
     function resetData() {
         $("#firstname").val("");
