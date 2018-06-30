@@ -43,27 +43,60 @@ $(document).ready(function () {
 
 
     //SEARCH LAST NAME
-    //var seacrhTerm = $("#searchLastName").val();
-    $("#find").on("click", function () {
 
-        var api = "http://localhost:3000/people?lastname=" + $("#searchLastName").val();
+    /* $("#find").on("click", function () {
+         var searchTerm = $("#searchLastName").val();
+         var api = "http://localhost:3000/people?lastname=" +  searchTerm;
+         if ($("#searchLastName").val() === "") {
+             ajaxGet();
+         } else {
+             $.ajax({
+                 type: "GET",
+                 url: api,
+                 async: false,
+                 dataType: 'json',
+                 success: function (result) {
+                     $(".phoneBook").html("");
+                     for (i = 0; i < result.length; i++) {
+                         $(".phoneBook").append('<div class="entry">' +
+                             '<div class="firstName"><p>' + result[i].firstname + '</p></div>' +
+                             '<div class="lastName"><p>' + result[i].lastname + '</p></div>' +
+                             '<div class="phoneNumber"><p>' + result[i].phonenumber + '</p></div>' +
+                             '<div class="del"><a href="#" class="delbutton" data-id=' + result[i].id + '>Delete</a></div>' +
+                             '</div>')
+                     };
+                     $("#searchLastName").val("");
+                     del();
+                 },
+                 error: function (e) {
+                     $(".phoneBook").html("<strong>Error</strong>");
+                     $("#searchLastName").val("");
+                     console.log("ERROR: ", e);
+                 }
+             });
+         }
+     });*/
+    $("#find").on("click", function () {
+        var searchTerm = $("#searchLastName").val();
         if ($("#searchLastName").val() === "") {
             ajaxGet();
         } else {
             $.ajax({
                 type: "GET",
-                url: api,
+                url: "http://localhost:3000/people",
                 async: false,
                 dataType: 'json',
                 success: function (result) {
                     $(".phoneBook").html("");
                     for (i = 0; i < result.length; i++) {
-                        $(".phoneBook").append('<div class="entry">' +
-                            '<div class="firstName"><p>' + result[i].firstname + '</p></div>' +
-                            '<div class="lastName"><p>' + result[i].lastname + '</p></div>' +
-                            '<div class="phoneNumber"><p>' + result[i].phonenumber + '</p></div>' +
-                            '<div class="del"><a href="#" class="delbutton" data-id=' + result[i].id + '>Delete</a></div>' +
-                            '</div>')
+                        if (result[i].lastname.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1) {
+                            $(".phoneBook").append('<div class="entry">' +
+                                '<div class="firstName"><p>' + result[i].firstname + '</p></div>' +
+                                '<div class="lastName"><p>' + result[i].lastname + '</p></div>' +
+                                '<div class="phoneNumber"><p>' + result[i].phonenumber + '</p></div>' +
+                                '<div class="del"><a href="#" class="delbutton" data-id=' + result[i].id + '>Delete</a></div>' +
+                                '</div>')
+                        }
                     };
                     $("#searchLastName").val("");
                     del();
@@ -77,8 +110,8 @@ $(document).ready(function () {
         }
     });
 
-    //GET REQUEST
 
+    //GET REQUEST
 
     function ajaxGet() {
         $.ajax({
@@ -140,6 +173,6 @@ $(document).ready(function () {
     $("#Cancel").on("click", function () {
         $(".quickAddForm").hide();
         $("input[type=text]").val("");
-	});
+    });
 
 });
