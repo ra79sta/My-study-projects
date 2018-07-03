@@ -160,6 +160,10 @@ $(document).ready(function () {
     }
     del();
 
+    $("#back").on("click", function() {
+        ajaxGet();
+    });
+
     function resetData() {
         $("#firstname").val("");
         $("#lastname").val("");
