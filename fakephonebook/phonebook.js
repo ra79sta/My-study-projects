@@ -35,7 +35,7 @@ $(document).ready(function () {
                 }
             });
             resetData();
-            del();
+           // del();
         } else {
             alert("Enter data!!!")
         }
