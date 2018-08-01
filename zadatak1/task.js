@@ -1,3 +1,8 @@
+//Given an integer larger then 100
+//make an array of 7 random integer slices of the given integer
+// where last two are smaller then all the others.
+//Sum of all array items should be the given integer.
+
 function makeArray(num) {
     var numero = num;
     var numOfElements = 7;
