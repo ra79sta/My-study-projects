@@ -13,15 +13,9 @@ function makeArray(num) {
     if (numero > 100) {
 
         for (var i = 0; i < numOfElements - 1; i++) {
-
             ints = Math.round(Math.random() * (numero - arrSum) / 2) + 1;
-            if (arr.indexOf(ints) == -1) {
-                arr.push(ints);
-            } else {
-                i--;
-            }
+            arr.push(ints);
             arrSum = arr.reduce((a, b) => a + b, 0);
-
         }
 
         lastInt = numero - arrSum;
