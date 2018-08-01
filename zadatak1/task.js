@@ -28,8 +28,6 @@ function makeArray(num) {
         arr.push(lastInt);
         arr.sort((a, b) => b - a);
 
-
-        console.log(arr);
     } else {
         console.log("Enter Number Larger then 100")
     }
