@@ -30,9 +30,10 @@ function makeArray(num) {
         return arr.every(x => arr.indexOf(x) === arr.lastIndexOf(x));
     }
     if (check(arr)) {
-        console.log(arr)
+        //console.log(arr)
+        return(arr);
     } else {
-        makeArray(num);
+       return makeArray(num);
     }
 }
 makeArray(101);
