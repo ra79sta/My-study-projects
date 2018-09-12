@@ -1,0 +1,208 @@
+body {
+    background: #e5e5e5;
+}
+
+.mainBox {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 419px;
+    height: 449px;
+    background: #ffffff;
+}
+
+.progressInfo {
+    position: absolute;
+    width: 320px;
+    height: 45.56px;
+    left: 50px;
+    top: 20px;
+}
+
+.rectangle1 {
+    position: absolute;
+    width: 320px;
+    height: 40px;
+    background: #333333;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.text1 {
+    width: 201px;
+    height: 23px;
+    margin-left: 16px;
+    margin-top: 8px;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: 23px;
+    font-size: 14px;
+    color: #f2f2f2;
+}
+
+.part1 {
+    font-weight: bold;
+}
+
+.triangle {
+    position: absolute;
+    width: 14.15px;
+    height: 8.07px;
+    left: 339.41px;
+    top: 55.15px;
+    background: #333333;
+    transform: rotate(-45deg);
+}
+
+.card {
+    position: absolute;
+    width: 320px;
+    height: 275px;
+    left: 50px;
+    top: 74px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.progresBar {
+    width: 272px;
+    height: 8px;
+    margin-left: 22px;
+    margin-top: 16px;
+    background: #f2f2f2;
+}
+
+.rectangle2 {
+    width: 188px;
+    height: 8px;
+    background: #EB5757;
+}
+
+.text2 {
+    width: 250px;
+    height: 29px;
+    margin-left: 24px;
+    margin-top: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: 28px;
+    font-size: 16px;
+    color: #4f4f4f;
+    white-space: nowrap;
+}
+
+.part2 {
+    color: #EB5757;
+    font-weight: bold;
+}
+
+.text3 {
+    width: 272px;
+    height: 79px;
+    margin-left: 24px;
+    margin-top: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: 26px;
+    font-size: 16px;
+    color: #4f4f4f;
+}
+
+.input-field {
+    position: absolute;
+    width: 128px;
+    height: 40px;
+    margin-left: 24px;
+    margin-top: 180px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 27px;
+    line-height: 30px;
+    color: #000000;
+}
+
+
+.sign {
+    width: 11px;
+    height: 30px;
+    margin-left: 32px;
+    margin-top: 22px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #828282;
+    z-index: 1;
+}
+
+.button-primary {
+    position: absolute;
+    width: 128px;
+    height: 40px;
+    margin-left: 168px;
+    margin-top: 180px;
+    background: #2F80ED;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 26px;
+    font-size: 16px;
+    text-align: center;
+    color: #f2f2f2
+}
+
+.cardPart {
+    position: absolute;
+    width: 88px;
+    height: 23px;
+    margin-left: 24px;
+    margin-top: 236px;
+    white-space: nowrap;
+}
+
+.text4 {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 23px;
+    font-size: 14px;
+    color: #56ccf2;
+}
+
+.button-secondary {
+    position: absolute;
+    width: 152px;
+    height: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    font-size: 14px;
+    text-align: center;
+    color: #828282;
+    background: #f7f7f7;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.first {
+    margin-left: 50px;
+    margin-top: 378px;
+}
+
+.second {
+    margin-left: 218px;
+    margin-top: 378px;
+}
