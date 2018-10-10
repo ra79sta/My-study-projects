@@ -41,10 +41,7 @@ function makeArray(num) {
     function check(arr) {
         return arr.every(x => arr.indexOf(x) === arr.lastIndexOf(x));
     }
-    if (check(arr)) {
-        return (arr);
-    } else {
-        return makeArray(num);
-    }
+    if (check(arr)) return (arr);
+    return makeArray(num);
 }
 makeArray(101);
