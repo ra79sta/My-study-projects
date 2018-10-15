@@ -9,6 +9,8 @@ class App extends Component {
       data: "",
       curentData: ""
     }
+    this.reverse = this.reverse.bind(this);
+    this.onInput = this.onInput.bind(this);
   }
   onInput = e => {
     e.preventDefault();
@@ -16,7 +18,7 @@ class App extends Component {
   }
 
   reverse = () => {
-    this.setState({ data: this.state.curentData.split('').reverse().join(""), curentData: "" });
+    this.setState({ data: this.state.curentData.split("").reverse().join(""), curentData: "" });
   }
 
   render() {
@@ -24,7 +26,7 @@ class App extends Component {
     return (
       <div className="App">
         Input String:
-          <input type="text" value={this.state.curentData} onChange={this.onInput}></input>
+        <input type="text" value={this.state.curentData} onChange={this.onInput}></input>
         <button onClick={this.reverse}>Revrese</button>
         <p> Reversed String: {result}</p>
       </div>
