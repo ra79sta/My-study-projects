@@ -1,0 +1,159 @@
+body {
+    background: rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h3,
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgb(94, 101, 190);
+    color: white;
+}
+
+table,
+th,
+td {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+    border-collapse: collapse;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#aList td,
+#aList th {
+    border: 1px solid rgb(160, 155, 155);
+    padding: 8px;
+}
+
+input[type=date] {
+    width: 250px;
+    margin: 10px 0 0 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.entry label {
+    margin-top: 10px;
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.showAsteroids {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: rgb(94, 101, 190);
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    margin-left: 215px;
+
+}
+
+input[type=text] {
+    border: 2px solid rgb(85, 81, 81);
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    position: absolute;
+    right: 300px;
+    width: 300px;
+}
+
+#asteroidSearch {
+    display: none;
+}
+
+
+.autoBox {
+    border: 2px solid rgb(85, 81, 81);
+    background-color: rgb(121, 121, 131);
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    right: 15px;
+    border-radius: 4px;
+    overflow: auto;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: none;
+}
+
+.showChart a,
+.backBut a {
+    text-decoration: none;
+    color: white;
+}
+
+.showChart {
+    width: 250px;
+    padding: 0;
+    float: right;
+    margin: 340px 0 30px 0;
+    background-color: rgb(94, 101, 190);
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.backBut {
+    width: 250px;
+    background-color: rgb(87, 88, 102);
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.charts {
+    position: relative;
+    height: 50px;
+    width: 1px;
+    margin-top: 20px;
+    opacity: 0;
+    margin-left: 180px;
+}
+
+.passName {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: -50px 0 0 0;
+}
+
+.asterNumber {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/*ul {
+    padding: 3px;
+    margin: 0;
+  }
+
+  ul li {
+    display: block;
+    position: relative;
+  }
+
+.remove {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0%, -50%);
+}*/
+
+

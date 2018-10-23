@@ -57,7 +57,7 @@ $(document).ready(function () {
                  dataType: 'json',
                  success: function (result) {
                      $(".phoneBook").html("");
-                     for (i = 0; i < result.length; i++) {
+                     for (var i = 0; i < result.length; i++) {
                          $(".phoneBook").append('<div class="entry">' +
                              '<div class="firstName"><p>' + result[i].firstname + '</p></div>' +
                              '<div class="lastName"><p>' + result[i].lastname + '</p></div>' +
@@ -88,7 +88,7 @@ $(document).ready(function () {
                 dataType: 'json',
                 success: function (result) {
                     $(".phoneBook").html("");
-                    for (i = 0; i < result.length; i++) {
+                    for (var i = 0; i < result.length; i++) {
                         if (result[i].lastname.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1) {
                             $(".phoneBook").append('<div class="entry">' +
                                 '<div class="firstName"><p>' + result[i].firstname + '</p></div>' +
@@ -121,7 +121,8 @@ $(document).ready(function () {
             dataType: 'json',
             success: function (result) {
                 $(".phoneBook").html("");
-                for (i = 0; i < result.length; i++) {
+                for (var i = 0; i < result.length; i++) {
+                    console.log(result[i].firstname);
                     $(".phoneBook").append('<div class="entry">' +
                         '<div class="firstName"><p>' + result[i].firstname + '</p></div>' +
                         '<div class="lastName"><p>' + result[i].lastname + '</p></div>' +
