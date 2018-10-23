@@ -1,7 +1,7 @@
 $(document).ready(function () {
     ajaxGet();
     //AJAX POST
-    //Submit Form
+    //Submit Form form
     $("#postForm").submit(function (event) {
         event.preventDefault();
         ajaxPost();
