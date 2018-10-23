@@ -3,54 +3,52 @@
 
 <head>
 
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Asteroidi</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-	<link rel="stylesheet" type="text/css" href="asteroidi.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Asteroidi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" type="text/css" href="asteroidi.css">
 </head>
 
 <body>
-	<div class="container">
+    <div class="container">
 
-		<h1>Asteroidi</h1>
-		<h3>Unesite pocetni i krajni datum za prikaz potencijalno opasnih asterioida u periodu!</h3>
-		<p>Napomena:<br />"Razlika izmedu pocetnog i krajnjeg datuma ne sme da bude veca od 7 dana"</p>
-		<div class="entry">
-			<form>
-				<label for="startDate">Start date:</label>
-				<input type="date" name="myDate" class="inputField" id="startDate" min="1200-01-01">
-				<br />
-				<label for="endDate">End date:</label>
-				<input type="date" name="myDate" class="inputField" id="endDate" max="2250-01-01">
-			</form>
-		</div>
+        <h1>Asteroidi</h1>
+        <h3>Unesite pocetni i krajni datum za prikaz potencijalno opasnih asterioida u periodu!</h3>
+        <p>Napomena:<br />"Razlika izmedu pocetnog i krajnjeg datuma ne sme da bude veca od 7 dana"</p>
+        <div class="entry">
+            <form>
+                <label for="startDate">Start date:</label>
+                <input type="date" name="myDate" class="inputField" id="startDate" min="1200-01-01">
+                <br />
+                <label for="endDate">End date:</label>
+                <input type="date" name="myDate" class="inputField" id="endDate" max="2250-01-01">
+            </form>
+        </div>
 
-		<button class="showAsteroids" id="apiCall">Prikazi Asteroide</button>
+        <button class="showAsteroids" id="apiCall">Prikazi Asteroide</button>
 
-		<table class="asteroidList" id="aList" style="width:100%">
+        <table class="asteroidList" id="aList" style="width:100%">
 
-		</table>
-		<form>
-			<input type="text" name="asteroidSearch" id="asteroidSearch" list="dataInput" placeholder="Autokomplete select box" />
+        </table>
+        <form>
+            <input type="text" name="asteroidSearch" id="asteroidSearch" list="dataInput" placeholder="Autokomplete select box" />
 
-		</form>
-		<datalist id="dataInput">
+        </form>
+        <datalist id="dataInput">
 
-		</datalist>
+        </datalist>
 
-		<div class="autoBox" id="pickAsteroid">
+        <div class="autoBox" id="pickAsteroid">
 
-		</div>
-
-		<button class="showChart" id="chart"><a href="grafikonasteroidi.html">Broj prolazaka pored Zemlje</a></button>
-
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="asteroidi.js"></script>
-		<script src="grafikonasteroidi.js"></script>
+        </div>
+        <button class="showChart" id="chart"><a href="grafikonasteroidi.html">Broj prolazaka pored Zemlje</a></button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="asteroidi.js"></script>
+    <script src="grafikonasteroidi.js"></script>
 
 </body>
 

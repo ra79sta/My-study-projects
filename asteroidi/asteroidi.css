@@ -143,12 +143,10 @@ input[type=text] {
     padding: 3px;
     margin: 0;
   }
-
   ul li {
     display: block;
     position: relative;
   }
-
 .remove {
     position: absolute;
     top: 50%;
