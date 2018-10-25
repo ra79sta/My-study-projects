@@ -81,7 +81,7 @@ input[type=text] {
     border: 2px solid rgb(85, 81, 81);
     background-color: rgb(121, 121, 131);
     height: 300px;
-    width: 250px;
+    width: 270px;
     position: absolute;
     float: right;
     margin-top: 30px;
@@ -101,7 +101,7 @@ input[type=text] {
 }
 
 .showChart {
-    width: 250px;
+    width: 270px;
     padding: 0;
     float: right;
     margin: 340px 0 30px 0;
@@ -139,19 +139,22 @@ input[type=text] {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-/*ul {
-    padding: 3px;
-    margin: 0;
-  }
-  ul li {
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+ul li {
     display: block;
     position: relative;
-  }
+}
+
 .remove {
     position: absolute;
     top: 50%;
-    right: 5%;
+    right: 2%;
     transform: translate(0%, -50%);
-}*/
-
-
+    cursor: pointer;
+}

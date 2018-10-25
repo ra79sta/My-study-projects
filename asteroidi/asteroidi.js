@@ -52,11 +52,6 @@ $(document).ready(function () {
 							let diametarMax = result["near_earth_objects"][keys[i]][j]["estimated_diameter"]["meters"]["estimated_diameter_max"];
 							//let link = result["near_earth_objects"][keys[i]][j]["links"]["self"];
 
-							hazObj = {
-								hazName: name,
-								hazId: id
-							};
-
 							if (hazarduos) {
 
 								$(".asteroidList").append(
@@ -70,7 +65,6 @@ $(document).ready(function () {
 								$("#dataInput").append(
 									"<option data-id='" + id + "'value='" + name + "'>" + name + "</option>"
 								);
-
 								// pick which asteroids you do calculation of passing near Earth
 								$(document).on("change", "input", function () {
 									let options = $('datalist')[0].options;
@@ -78,23 +72,37 @@ $(document).ready(function () {
 										if (options[i].value == $(this).val()) {
 											let ID = options[i].dataset.id;
 											$(".autoBox").append(
-												"<ul><li class='element'>" + $(this).val() + "</li><ul>"
+												"<ul><li class='element' id =" + ID + ">" + $(this).val() + "<div class='remove'>X</div>" + "</li><ul>"
 											);
 											options[i].remove();
-
 											hazObj = {
 												hazName: $(this).val(),
 												hazId: ID
 											};
 											hazArrObj.push(hazObj);
-
 											localStorage.setItem("hazArrObj", JSON.stringify(hazArrObj)); // put array in local storage to call it in second js file
 
+											// remove asteroids from the list of chosen
+											$(".remove").on("click", function () {
+												$(this).parent().remove();
+												let li_Id = $(this).parent()[0].id;
+												let el_name = $(this).parent()[0].firstChild.data;
+												for (let j = 0; j < hazArrObj.length; j++) {
+													if (hazArrObj[j].hazId == li_Id) {
+														hazArrObj.splice(j, 1);
+														$("#dataInput").append(
+															"<option data-id='" + li_Id + "'value='" + el_name + "'>" + el_name + "</option>"
+														);
+														localStorage.setItem("hazArrObj", JSON.stringify(hazArrObj)); // put array in local storage to call it in second js file
+													}
+												}
+											});
 											$("#asteroidSearch").val("");
 											break;
 										}
 									}
 								});
+
 							}
 						}
 					}
