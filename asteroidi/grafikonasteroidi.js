@@ -1,6 +1,9 @@
 $(document).ready(function () {
 
 	let newArrObj = JSON.parse(localStorage.getItem("hazArrObj")); //restore array form first js file to call ajax
+	let start_date = JSON.parse(localStorage.getItem("start_date"));
+	let end_date = JSON.parse(localStorage.getItem("end_date"));
+
 	grafs();
 
 	function grafs() {
@@ -11,6 +14,10 @@ $(document).ready(function () {
 				url: api2,
 				dataType: "json",
 				success: function (data) {
+					$(".message").html(
+						"<h4>Potencijalo opasni asteroidi u preiodu od " + start_date +" do "+ end_date + "</h4>"+
+						"<p>Na garfikonu je prikazan broj potenciajlno opasnih prolaza asteroida pored zemlje u periodu od 1990. do 1999. godine</p>"
+					);
 					$(".chartsGrafs").append(
 						"<div class='charts' id='" + newArrObj[g].hazId + "'></div>"
 					);

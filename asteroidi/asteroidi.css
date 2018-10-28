@@ -9,7 +9,7 @@ h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-h3,
+h3, h4,
 p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
@@ -59,7 +59,7 @@ input[type=date] {
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     margin-left: 215px;
-
+    cursor: pointer;
 }
 
 input[type=text] {
@@ -119,6 +119,7 @@ input[type=text] {
     color: white;
     margin-top: 30px;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .charts {
@@ -136,7 +137,7 @@ input[type=text] {
 }
 
 .asterNumber {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 ul {
@@ -158,3 +159,14 @@ ul li {
     transform: translate(0%, -50%);
     cursor: pointer;
 }
+
+.focus {
+    background-color:rgb(94, 101, 190);
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .pageNumber {
+    padding: 2px;
+  }

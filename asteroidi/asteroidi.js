@@ -20,6 +20,9 @@ $(document).ready(function () {
 		let timeDifference = Math.abs(end.getTime() - start.getTime());
 		let diffDays = Math.ceil(timeDifference / (1000 * 3600 * 24));
 
+		localStorage.setItem("start_date", JSON.stringify(start_date));
+		localStorage.setItem("end_date", JSON.stringify(end_date));
+
 		// do ajax call with input dates
 		let api = "https://api.nasa.gov/neo/rest/v1/feed?start_date=" + start_date + "&end_date=" + end_date + "&api_key=x0HeIJzRCLm3lj0zrfXt2LltusKVCO7aoHmRkVq2";
 		if (diffDays <= 7) {
@@ -106,6 +109,40 @@ $(document).ready(function () {
 							}
 						}
 					}
+					//pagitation for table of asteroids
+					let totalRows = $(".asteroidList").find("tbody tr:has(td)").length;
+					let recordPerPage = 10;
+					let totalPages = Math.ceil(totalRows / recordPerPage);
+					let pages = $("<div id='pages'></div>");
+					for (let g = 0; g < totalPages; g++) {
+						$("<span class='pageNumber'>&nbsp;" + (g + 1) + "</span>").appendTo(pages);
+					}
+					pages.appendTo(".asteroidList");
+
+					$(".pageNumber").hover(
+						function () {
+							$(this).addClass("focus");
+						},
+						function () {
+							$(this).removeClass("focus");
+						}
+					);
+
+					$("table").find("tbody tr:has(td)").hide();
+					let tr = $("table tbody tr:has(td)");
+					for (let k = 0; k <= recordPerPage - 1; k++) {
+						$(tr[k]).show();
+					}
+					$("span").click(function () {
+						$(".asteroidList").find("tbody tr:has(td)").hide();
+						let pBegin = ($(this).text() - 1) * recordPerPage;
+						console.log($(this).text());
+						let pEnd = $(this).text() * recordPerPage - 1;
+						for (let l = pBegin; l <= pEnd; l++) {
+							$(tr[l]).show();
+						}
+					});
+
 					$("#asteroidSearch").css("display", "block");
 					$(".autoBox").css("display", "block");
 					$(".showChart").css("display", "block");
