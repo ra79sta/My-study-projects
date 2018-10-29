@@ -136,12 +136,36 @@ $(document).ready(function () {
                     $("span").click(function () {
                         $(".asteroidList").find("tbody tr:has(td)").hide();
                         let pBegin = ($(this).text() - 1) * recordPerPage;
-                        console.log($(this).text());
                         let pEnd = $(this).text() * recordPerPage - 1;
                         for (let l = pBegin; l <= pEnd; l++) {
                             $(tr[l]).show();
                         }
                     });
+
+                    //sort by clicking in table column headers-ascending and descending
+                    $("th").on("click", function () {
+                        let table = $(this).parents("table").eq(0)
+                        let rows = table.find("tr:gt(0)").toArray().sort(compare($(this).index()))
+                        this.asc = !this.asc
+                        if (!this.asc) {
+                            rows = rows.reverse();
+                        }
+                        for (var i = 0; i < rows.length; i++) {
+                            table.append(rows[i]);
+                        }
+                    });
+
+                    function compare(index) {
+                        return function (a, b) {
+                            let valA = getCellValue(a, index);
+                            let valB = getCellValue(b, index);
+                            return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.toString().localeCompare(valB)
+                        }
+                    }
+
+                    function getCellValue(row, index) {
+                        return $(row).children("td").eq(index).text()
+                    }
 
                     $("#asteroidSearch").css("display", "block");
                     $(".autoBox").css("display", "block");

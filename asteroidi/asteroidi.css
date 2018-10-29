@@ -20,6 +20,7 @@ th {
     padding-bottom: 12px;
     background-color: rgb(94, 101, 190);
     color: white;
+    cursor: pointer;
 }
 
 table,
