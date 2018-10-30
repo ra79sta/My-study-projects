@@ -87,4 +87,8 @@ $(document).ready(function () {
         }
         return false;
     }
+    $(".backBut").on("click", function () {
+        let hazArrObj = [];
+        localStorage.setItem("hazArrObj", JSON.stringify(hazArrObj));
+    });
 });
