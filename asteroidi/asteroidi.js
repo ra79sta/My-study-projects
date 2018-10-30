@@ -31,8 +31,8 @@ $(document).ready(function () {
                 url: api,
                 dataType: "json",
                 success: function (result) {
-                    $(".asteroidList").html("<tr>" +
-                        "<thead><th>Datum</th>" +
+                    $(".asteroidList").html("<thead><tr>" +
+                        "<th>Datum</th>" +
                         "<th>Ime</th>" +
                         "<th>Brzina kretanja (km/h)</th>" +
                         "<th>Min. Precnik (m)</th>" +

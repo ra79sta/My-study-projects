@@ -1,5 +1,9 @@
 body {
-    background: rgb(255, 255, 255);
+    /*background: rgb(255, 255, 255);*/
+    background-image: url(images/4859_asteroid.jpg);
+    background-size: cover;
+    color: white;
+
 }
 
 h1 {
@@ -31,6 +35,10 @@ td {
     padding: 10px;
     border-collapse: collapse;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+td {
+    background-color: rgb(56, 54, 54);
 }
 
 #aList td,
@@ -81,7 +89,7 @@ input[type=text] {
 
 .autoBox {
     border: 2px solid rgb(85, 81, 81);
-    background-color: rgb(121, 121, 131);
+    background-color: rgb(56, 54, 54);
     height: 300px;
     width: 270px;
     position: absolute;
@@ -103,6 +111,7 @@ input[type=text] {
 }
 
 .showChart {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 270px;
     padding: 0;
     float: right;
@@ -114,6 +123,7 @@ input[type=text] {
 }
 
 .backBut {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 250px;
     background-color: rgb(87, 88, 102);
     border-radius: 4px;
