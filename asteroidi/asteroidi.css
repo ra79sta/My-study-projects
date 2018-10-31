@@ -107,8 +107,8 @@ input[type=text] {
     display: none;
 }
 
-.showChart a,
-.backBut a {
+.showChart,
+.backBut {
     text-decoration: none;
     color: white;
 }
