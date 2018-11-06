@@ -133,7 +133,7 @@ $(document).ready(function () {
                     for (let k = 0; k <= recordPerPage - 1; k++) {
                         $(tr[k]).show();
                     }
-                    $("span").click(function () {
+                    $(".pageNumber").on("click", function () {
                         $(".asteroidList").find("tbody tr:has(td)").hide();
                         let pBegin = ($(this).text() - 1) * recordPerPage;
                         let pEnd = $(this).text() * recordPerPage - 1;
